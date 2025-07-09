@@ -19,11 +19,11 @@ import org.bouncycastle.util.Strings;
 public class MyClient2 {
 	public static  void main(String[] args) throws Exception {
 		Properties props = System.getProperties();
-		props.setProperty("jdk.tls.namedGroups", "X25519MLKEM768");
+		props.setProperty("jdk.tls.namedGroups", "X25519");
 		String HOST_NAME = "www.instagram.com";
 		int PORT = 443;
 		Security.addProvider(new BouncyCastleJsseProvider());
-		SSLContext sslContext = SSLContext.getInstance("TLSv1.3", "BCJSSE");
+		SSLContext sslContext = SSLContext.getInstance("TLSv1.2", "BCJSSE");
 		TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance("PKIX", "BCJSSE");
 		trustManagerFactory.init((KeyStore) null);
 		sslContext.init(null, trustManagerFactory.getTrustManagers(), new SecureRandom());
