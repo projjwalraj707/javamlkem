@@ -20,6 +20,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 public class MyClient2 {
 	public static void main(String[] args) throws Exception {
 		System.setProperty("jdk.tls.namedGroups", "X25519MLKEM768");
+		System.setProperty("org.bouncycastle.tls.verbose", "true");
 
 		String HOST_NAME = "www.cloudflare.com";
 		int PORT = 443;
@@ -54,7 +55,7 @@ public class MyClient2 {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 		String line;
 		while ((line = reader.readLine()) != null) {
-			System.out.println(line);
+			//System.out.println(line);
 		}
 		cSock.close();
 	}
