@@ -1,4 +1,5 @@
 import java.security.Security;
+import java.security.KeyStore;
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
 
@@ -7,6 +8,8 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.KeyManager;
 import javax.net.ssl.X509TrustManager;
 
 import java.io.InputStream;
@@ -24,47 +27,20 @@ import org.bouncycastle.jsse.provider.BouncyCastleJsseProvider;
 import org.bouncycastle.jsse.BCSSLSocket;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
-public class MyClient3 {
-
-    public static void enableBCLogging() {
-        // Configure the root logger and ensure console handler prints everything
-        Logger root = Logger.getLogger("");
-        root.setLevel(Level.ALL);
-        for (Handler h : root.getHandlers()) {
-            h.setLevel(Level.ALL);
-        }
-        boolean hasConsole = false;
-        for (Handler h : root.getHandlers()) {
-            if (h instanceof ConsoleHandler) { hasConsole = true; break; }
-        }
-        if (!hasConsole) {
-            ConsoleHandler ch = new ConsoleHandler();
-            ch.setLevel(Level.ALL);
-            root.addHandler(ch);
-        }
-
-        // Turn on BouncyCastle JSSE / TLS logging
-        Logger.getLogger("org.bouncycastle.jsse").setLevel(Level.FINEST);
-        Logger.getLogger("org.bouncycastle.jsse.provider").setLevel(Level.FINEST);
-        Logger.getLogger("org.bouncycastle.jce.provider").setLevel(Level.FINEST);
-        Logger.getLogger("org.bouncycastle.tls").setLevel(Level.FINEST);
-    }
+public class MyClientWithWKS { //MyClient with Windows KeyStore
 
     public static void main(String[] args) throws Exception {
-        // Enable BC logging before providers are registered
-        enableBCLogging();
-
         // Optional: helps some low-level BC code paths
         System.setProperty("org.bouncycastle.tls.verbose", "true");
         // Example named group property (your original)
-        System.setProperty("jdk.tls.namedGroups", "X25519MLKEM768,MLKEM768");
+        //System.setProperty("jdk.tls.namedGroups", "X25519MLKEM768,MLKEM768");
 
         String HOST_NAME = "www.cloudflare.com";
         int PORT = 443;
 
         // Register BC providers
-        Security.addProvider(new BouncyCastleJsseProvider());
         Security.addProvider(new BouncyCastleProvider());
+        Security.addProvider(new BouncyCastleJsseProvider());
 
         // Trust-all for testing only (DO NOT use in production)
         TrustManager[] trustAllCerts = new TrustManager[] {
@@ -75,8 +51,16 @@ public class MyClient3 {
             }
         };
 
+		 KeyStore ks = KeyStore.getInstance("Windows-ROOT", "SunMSCAPI");
+		//System.out.println("Provider Name: " + ks.getProvider().getName());
+		ks.load(null, null);
+
+		KeyManagerFactory kmf = KeyManagerFactory.getInstance("SunX509");
+		kmf.init(ks, null);
+		KeyManager[] KeyManagers = kmf.getKeyManagers();
+
         SSLContext sslContext = SSLContext.getInstance("TLSv1.3", "BCJSSE");
-        sslContext.init(null, trustAllCerts, SecureRandom.getInstance("DEFAULT", BouncyCastleProvider.PROVIDER_NAME));
+        sslContext.init(KeyManagers, trustAllCerts, SecureRandom.getInstance("DEFAULT", BouncyCastleProvider.PROVIDER_NAME));
 
         SSLSocketFactory socketFactory = sslContext.getSocketFactory();
         try (SSLSocket cSock = (SSLSocket) socketFactory.createSocket(HOST_NAME, PORT)) {
@@ -101,7 +85,7 @@ public class MyClient3 {
             String line;
             while ((line = reader.readLine()) != null) {
                 // Uncomment to print response body
-                // System.out.println(line);
+                System.out.println(line);
             }
         }
     }
