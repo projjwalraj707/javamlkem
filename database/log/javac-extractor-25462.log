@@ -1,0 +1,60 @@
+[2026-01-05 02:20:07] [javac-extractor-25462] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 25 --javac-args @@@/home/projjwalraj707/javamlkem/database/log/ext/javac.args
+                                              user.dir=/home/projjwalraj707/javamlkem
+[2026-01-05 02:20:07] [javac-extractor-25462] Compilation name /home/projjwalraj707/javamlkem/database/trap/java/diagnostics/diagnostic.trap.gz
+[2026-01-05 02:20:08] [javac-extractor-25462] Disabling annotation processing because there is no apparent Lombok usage
+[2026-01-05 02:20:12] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-debug-jdk14/1.74/bcprov-debug-jdk14-1.74.jar
+[2026-01-05 02:20:14] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/org/bouncycastle/bctls-jdk14/1.75/bctls-jdk14-1.75.jar
+[2026-01-05 02:20:14] [javac-extractor-25462]   Adding container RemoteArchiveContainer[https://repo.maven.apache.org/maven2, org.bouncycastle:bctls-jdk14:jar:1.75] to the classpath
+[2026-01-05 02:20:14] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/org/openidentityplatform/opendj/opendj-ldap-sdk-examples/4.5.4/opendj-ldap-sdk-examples-4.5.4.jar
+[2026-01-05 02:20:18] [javac-extractor-25462]   Adding container RemoteArchiveContainer[https://repo.maven.apache.org/maven2, org.openidentityplatform.opendj:opendj-ldap-sdk-examples:jar:4.5.4] to the classpath
+[2026-01-05 02:20:18] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/com/luhuiguo/bouncycastle/bcprov-jdk15on/1.70/bcprov-jdk15on-1.70.jar
+[2026-01-05 02:20:18] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar
+[2026-01-05 02:20:19] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/bouncycastle/bcprov-jdk14/140/bcprov-jdk14-140.jar
+[2026-01-05 02:20:19] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/org/ow2/bundles/ow2-bundles-externals-bouncycastle/1.0.36/ow2-bundles-externals-bouncycastle-1.0.36.jar
+[2026-01-05 02:20:19] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/org/codehaus/xfire/bcprov-jdk15/133/bcprov-jdk15-133.jar
+[2026-01-05 02:20:19] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk12/130/bcprov-jdk12-130.jar
+[2026-01-05 02:20:19] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-ext-jdk15/1.46/bcprov-ext-jdk15-1.46.jar
+[2026-01-05 02:20:19] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/bouncycastle/bouncycastle-jce-jdk13/112/bouncycastle-jce-jdk13-112.jar
+[2026-01-05 02:20:21] [javac-extractor-25462]   Adding container RemoteArchiveContainer[https://repo.maven.apache.org/maven2, bouncycastle:bcprov-jdk15:jar:140] to the classpath
+[2026-01-05 02:20:21] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/bouncycastle/bcprov-jdk13/140/bcprov-jdk13-140.jar
+[2026-01-05 02:20:21] [javac-extractor-25462] 8 files will be passed to the attrib/flow phase
+[2026-01-05 02:20:21] [javac-extractor-25462] Processing file /home/projjwalraj707/javamlkem/DoesSupportPQC.java
+[2026-01-05 02:20:21] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:21] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-05 02:20:22] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/org/apache/pulsar/bouncy-castle-bc-shaded/2.6.4/bouncy-castle-bc-shaded-2.6.4.jar
+[2026-01-05 02:20:22] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/com/liferay/org-bouncycastle-provider/1.61.LIFERAY-PATCHED-1/org-bouncycastle-provider-1.61.LIFERAY-PATCHED-1.jar
+[2026-01-05 02:20:22] [javac-extractor-25462] Fetch https://repo.maven.apache.org/maven2/com/chemdrawcloud/gwt-crypto/2.7.0/gwt-crypto-2.7.0.jar
+[2026-01-05 02:20:26] [javac-extractor-25462] Processing module java.base
+[2026-01-05 02:20:26] [javac-extractor-25462] Processing JAR file: /home/projjwalraj707/javamlkem/database/working/jars/org/bouncycastle/bctls-jdk14/1.75/bctls-jdk14-1.75.jar
+[2026-01-05 02:20:26] [javac-extractor-25462] Processing JAR file: /home/projjwalraj707/javamlkem/database/working/jars/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar
+[2026-01-05 02:20:26] [javac-extractor-25462] Processing JAR file: /home/projjwalraj707/javamlkem/database/working/jars/org/openidentityplatform/opendj/opendj-ldap-sdk-examples/4.5.4/opendj-ldap-sdk-examples-4.5.4.jar
+[2026-01-05 02:20:26] [javac-extractor-25462] Processing file /home/projjwalraj707/javamlkem/ExportToPKCS.java
+[2026-01-05 02:20:27] [javac-extractor-25462] Processing file /home/projjwalraj707/javamlkem/ListCerts.java
+[2026-01-05 02:20:27] [javac-extractor-25462] Processing file /home/projjwalraj707/javamlkem/MyClient.java
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] Processing file /home/projjwalraj707/javamlkem/MyClient2.java
+[2026-01-05 02:20:27] [javac-extractor-25462] Processing file /home/projjwalraj707/javamlkem/MyClient3.java
+[2026-01-05 02:20:27] [javac-extractor-25462] Processing module java.logging
+[2026-01-05 02:20:27] [javac-extractor-25462] Processing file /home/projjwalraj707/javamlkem/MyClientWithWKS.java
+[2026-01-05 02:20:27] [javac-extractor-25462] Processing file /home/projjwalraj707/javamlkem/Tls13ClientExample.java
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind ClassInstanceCreation
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unexpected symbol for constructor: new TlsClientProtocol(new Socket(host, port).getInputStream(), new Socket(host, port).getOutputStream(), crypto.getSecureRandom())
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown method invocation of kind MEMBER_SELECT: TlsExtensionsUtils.addSupportedVersionsExtensionClient(extensions, ProtocolVersion.TLSv13)
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown method invocation of kind MEMBER_SELECT: CipherSuite.getName(cipherSuite)
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown method invocation of kind MEMBER_SELECT: params.getNamedGroup()
+[2026-01-05 02:20:27] [javac-extractor-25462] Classpath entries inferred from used external package names:
+[2026-01-05 02:20:27] [javac-extractor-25462] /home/projjwalraj707/javamlkem/database/working/jars/org/bouncycastle/bctls-jdk14/1.75/bctls-jdk14-1.75.jar
+[2026-01-05 02:20:27] [javac-extractor-25462] /home/projjwalraj707/javamlkem/database/working/jars/org/openidentityplatform/opendj/opendj-ldap-sdk-examples/4.5.4/opendj-ldap-sdk-examples-4.5.4.jar
+[2026-01-05 02:20:27] [javac-extractor-25462] /home/projjwalraj707/javamlkem/database/working/jars/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar
+[2026-01-05 02:20:27] [javac-extractor-25462] Javac init time: 14.4s
+[2026-01-05 02:20:27] [javac-extractor-25462] Javac attr time: 0.2s
+[2026-01-05 02:20:27] [javac-extractor-25462] Extractor time: 5.7s
+[2026-01-05 02:20:27] [javac-extractor-25462] Other time: 0.2s
+[2026-01-05 02:20:27] [javac-extractor-25462] Total time: 20.4s
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] 7 errors were reported by javac.

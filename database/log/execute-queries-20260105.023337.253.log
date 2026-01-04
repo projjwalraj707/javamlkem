@@ -1,0 +1,32 @@
+[2026-01-05 02:33:37] This is codeql execute queries -J-Xmx1383M --verbosity=progress --logdir=/home/projjwalraj707/javamlkem/database/log --evaluator-log-level=5 --warnings=show --qlconfig-file=/home/projjwalraj707/javamlkem/qlconfig.yml --dynamic-join-order-mode=none --no-rerun --interpret-passthrough=null,--format=sarif-latest,-o=/home/projjwalraj707/javamlkem/output.json,--max-paths=4,--csv-location-format=line-column,--print-diagnostics-summary,--print-metrics-summary,--qlconfig-file=/home/projjwalraj707/javamlkem/qlconfig.yml,--,/home/projjwalraj707/javamlkem/database,codeql/java-all --output=/home/projjwalraj707/javamlkem/database/results -- /home/projjwalraj707/javamlkem/database/db-java codeql/java-all
+[2026-01-05 02:33:37] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/projjwalraj707/javamlkem/qlconfig.yml --format=json -- codeql/java-all
+[2026-01-05 02:33:38] [PROGRESS] resolve queries> Recording pack reference codeql/java-all at /home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2.
+[2026-01-05 02:33:38] [SPAMMIER] resolve queries> Resolution instruction: qlpack codeql/java-all
+[2026-01-05 02:33:38] [SPAMMY] resolve queries> Scanning for QL files at /home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2.
+[2026-01-05 02:33:39] [SPAMMY] resolve queries> Not recursing into upgrades directory /home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2/upgrades.
+[2026-01-05 02:33:39] [SPAMMY] resolve queries> Found 6 QL files in /home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2.
+[2026-01-05 02:33:39] [SPAMMY] resolve queries> Query Filter: Implicitly including /home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2/utils/test/PrettyPrintModels.ql.
+[2026-01-05 02:33:39] [SPAMMY] resolve queries> Query Filter: Implicitly including /home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2/utils/test/InlineExpectationsTestQuery.ql.
+[2026-01-05 02:33:39] [SPAMMY] resolve queries> Query Filter: Implicitly including /home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2/localDefinitions.ql.
+[2026-01-05 02:33:39] [SPAMMY] resolve queries> Query Filter: Implicitly including /home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2/printAst.ql.
+[2026-01-05 02:33:39] [SPAMMY] resolve queries> Query Filter: Implicitly including /home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2/localReferences.ql.
+[2026-01-05 02:33:39] [SPAMMY] resolve queries> Query Filter: Implicitly including /home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2/semmle/code/java/PrintAst.ql.
+[2026-01-05 02:33:39] [DETAILS] resolve queries> Got 6 queries from /home/projjwalraj707/javamlkem.
+[2026-01-05 02:33:39] [ERROR] resolve queries> ERROR: CodeQL pack 'codeql/java-all' is a library and does not contain queries to run. Try using a query pack instead. (/home/projjwalraj707/codeql707/codeql-bundle/qlpacks/codeql/java-queries/7.8.2:1,1-1)
+[2026-01-05 02:33:39] Exception caught at top level: Error resolving queries.
+                      com.semmle.cli2.resolve.ResolveQueriesCommand.executeJSON(ResolveQueriesCommand.java:215)
+                      com.semmle.cli2.resolve.ResolveQueriesCommand.executeJSON(ResolveQueriesCommand.java:68)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSONWithExistingMessages(SimpleJsonSubcommand.java:121)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSON(SimpleJsonSubcommand.java:110)
+                      com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:61)
+                      com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:170)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.executeSubcommand(ExecuteQueriesCommand.java:425)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:777)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:757)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:238)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:259)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:113)

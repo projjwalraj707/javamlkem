@@ -1,0 +1,14 @@
+[2026-01-05 02:20:21] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:21] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind ClassInstanceCreation
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unexpected symbol for constructor: new TlsClientProtocol(new Socket(host, port).getInputStream(), new Socket(host, port).getOutputStream(), crypto.getSecureRandom())
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown method invocation of kind MEMBER_SELECT: TlsExtensionsUtils.addSupportedVersionsExtensionClient(extensions, ProtocolVersion.TLSv13)
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown method invocation of kind MEMBER_SELECT: CipherSuite.getName(cipherSuite)
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown method invocation of kind MEMBER_SELECT: params.getNamedGroup()
+[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] 7 errors were reported by javac.
