@@ -1,0 +1,107 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:06e716ad-452e-427a-9ffc-4cd0e435e801",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-01-06T10:27:07Z",
+    "tools": {
+      "components": [],
+      "services": [
+        {
+          "provider": {
+            "name": "PQCA"
+          },
+          "name": "CBOMkit"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "gitUrl",
+        "value": "https://github.com/projjwalraj707/javamlkem"
+      },
+      {
+        "name": "revision",
+        "value": "main"
+      },
+      {
+        "name": "commit",
+        "value": "9d62639"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cdec6ce4-605b-4fda-901c-0977b43de618",
+      "name": "TLSv1.3",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "ExportToPKCS.java",
+            "line": 44,
+            "offset": 26,
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "location": "MyClientWithWKS.java",
+            "line": 62,
+            "offset": 32,
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "location": "MyClient3.java",
+            "line": 78,
+            "offset": 32,
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          },
+          {
+            "location": "MyClient2.java",
+            "line": 39,
+            "offset": 26,
+            "additionalContext": "javax.net.ssl.SSLContext#getInstance(Ljava/lang/String;Ljava/lang/String;)Ljavax/net/ssl/SSLContext;"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "1.3"
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "c5fcb7d6-7177-43aa-bb6e-9e016ecf80c9",
+      "name": "ML-KEM",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "MLKEM.java",
+            "line": 30,
+            "offset": 34,
+            "additionalContext": "org.bouncycastle.pqc.crypto.mlkem.MLKEMGenerator#<init>(Ljava/security/SecureRandom;)V"
+          },
+          {
+            "location": "MLKEM.java",
+            "line": 36,
+            "offset": 34,
+            "additionalContext": "org.bouncycastle.pqc.crypto.mlkem.MLKEMExtractor#<init>(Lorg/bouncycastle/pqc/crypto/mlkem/MLKEMPrivateKeyParameters;)V"
+          }
+        ]
+      },
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "kem",
+          "cryptoFunctions": [
+            "encapsulate"
+          ]
+        }
+      }
+    }
+  ],
+  "dependencies": []
+}
