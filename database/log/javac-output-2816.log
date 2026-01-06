@@ -1,0 +1,122 @@
+[2026-01-06 16:12:34] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:3: error: package org.bouncycastle.pqc.crypto.mlkem does not exist
+[2026-01-06 16:12:34] [javac-output-2816] import org.bouncycastle.pqc.crypto.mlkem.MLKEMKeyGenerationParameters;
+[2026-01-06 16:12:34] [javac-output-2816]                                         ^
+[2026-01-06 16:12:34] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:4: error: package org.bouncycastle.pqc.crypto.mlkem does not exist
+[2026-01-06 16:12:34] [javac-output-2816] import org.bouncycastle.pqc.crypto.mlkem.MLKEMKeyParameters;
+[2026-01-06 16:12:34] [javac-output-2816]                                         ^
+[2026-01-06 16:12:34] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:5: error: package org.bouncycastle.pqc.crypto.mlkem does not exist
+[2026-01-06 16:12:34] [javac-output-2816] import org.bouncycastle.pqc.crypto.mlkem.MLKEMKeyPairGenerator;
+[2026-01-06 16:12:34] [javac-output-2816]                                         ^
+[2026-01-06 16:12:34] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:6: error: package org.bouncycastle.pqc.crypto.mlkem does not exist
+[2026-01-06 16:12:34] [javac-output-2816] import org.bouncycastle.pqc.crypto.mlkem.MLKEMParameters;
+[2026-01-06 16:12:34] [javac-output-2816]                                         ^
+[2026-01-06 16:12:34] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:10: error: package org.bouncycastle.pqc.crypto.mlkem does not exist
+[2026-01-06 16:12:34] [javac-output-2816] import org.bouncycastle.pqc.crypto.mlkem.MLKEMExtractor;
+[2026-01-06 16:12:34] [javac-output-2816]                                         ^
+[2026-01-06 16:12:34] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:11: error: package org.bouncycastle.pqc.crypto.mlkem does not exist
+[2026-01-06 16:12:34] [javac-output-2816] import org.bouncycastle.pqc.crypto.mlkem.MLKEMGenerator;
+[2026-01-06 16:12:34] [javac-output-2816]                                         ^
+[2026-01-06 16:12:34] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:12: error: package org.bouncycastle.pqc.crypto.mlkem does not exist
+[2026-01-06 16:12:34] [javac-output-2816] import org.bouncycastle.pqc.crypto.mlkem.MLKEMPrivateKeyParameters;
+[2026-01-06 16:12:34] [javac-output-2816]                                         ^
+[2026-01-06 16:12:34] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:13: error: package org.bouncycastle.pqc.crypto.mlkem does not exist
+[2026-01-06 16:12:34] [javac-output-2816] import org.bouncycastle.pqc.crypto.mlkem.MLKEMPublicKeyParameters;
+[2026-01-06 16:12:34] [javac-output-2816]                                         ^
+[2026-01-06 16:12:35] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/DoesSupportPQC.java:9: error: cannot find symbol
+[2026-01-06 16:12:35] [javac-output-2816] 		if (crypto.hasNamedGroup(NamedGroup.MLKEM512)) System.out.println("Congrats! This version of BC supports PQC TLS.");
+[2026-01-06 16:12:35] [javac-output-2816] 		                                   ^
+[2026-01-06 16:12:35] [javac-output-2816]   symbol:   variable MLKEM512
+[2026-01-06 16:12:35] [javac-output-2816]   location: class NamedGroup
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:18: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMKeyGenerationParameters mlkemKeyGenParam = new MLKEMKeyGenerationParameters(secureRandom, MLKEMParameters.ml_kem_768);
+[2026-01-06 16:12:41] [javac-output-2816] 		^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMKeyGenerationParameters
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:18: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMKeyGenerationParameters mlkemKeyGenParam = new MLKEMKeyGenerationParameters(secureRandom, MLKEMParameters.ml_kem_768);
+[2026-01-06 16:12:41] [javac-output-2816] 		                                                    ^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMKeyGenerationParameters
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:18: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMKeyGenerationParameters mlkemKeyGenParam = new MLKEMKeyGenerationParameters(secureRandom, MLKEMParameters.ml_kem_768);
+[2026-01-06 16:12:41] [javac-output-2816] 		                                                                                               ^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   variable MLKEMParameters
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:19: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMKeyPairGenerator mlKemKeyPairGen = new MLKEMKeyPairGenerator();
+[2026-01-06 16:12:41] [javac-output-2816] 		^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMKeyPairGenerator
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:19: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMKeyPairGenerator mlKemKeyPairGen = new MLKEMKeyPairGenerator();
+[2026-01-06 16:12:41] [javac-output-2816] 		                                            ^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMKeyPairGenerator
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:23: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMPrivateKeyParameters prvKey = (MLKEMPrivateKeyParameters) keyPair.getPrivate();
+[2026-01-06 16:12:41] [javac-output-2816] 		^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMPrivateKeyParameters
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:23: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMPrivateKeyParameters prvKey = (MLKEMPrivateKeyParameters) keyPair.getPrivate();
+[2026-01-06 16:12:41] [javac-output-2816] 		                                    ^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMPrivateKeyParameters
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:24: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMPublicKeyParameters pubKey = (MLKEMPublicKeyParameters) keyPair.getPublic();
+[2026-01-06 16:12:41] [javac-output-2816] 		^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMPublicKeyParameters
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:24: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMPublicKeyParameters pubKey = (MLKEMPublicKeyParameters) keyPair.getPublic();
+[2026-01-06 16:12:41] [javac-output-2816] 		                                   ^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMPublicKeyParameters
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:30: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMGenerator mlkemGenerator = new MLKEMGenerator(secureRandom);
+[2026-01-06 16:12:41] [javac-output-2816] 		^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMGenerator
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:30: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMGenerator mlkemGenerator = new MLKEMGenerator(secureRandom);
+[2026-01-06 16:12:41] [javac-output-2816] 		                                    ^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMGenerator
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:36: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMExtractor mlkemExtractor = new MLKEMExtractor(prvKey);
+[2026-01-06 16:12:41] [javac-output-2816] 		^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMExtractor
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MLKEM.java:36: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 		MLKEMExtractor mlkemExtractor = new MLKEMExtractor(prvKey);
+[2026-01-06 16:12:41] [javac-output-2816] 		                                    ^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   class MLKEMExtractor
+[2026-01-06 16:12:41] [javac-output-2816]   location: class MLKEM
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/MyClient.java:45: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816] 				v.addElement(Integers.valueOf(NamedGroup.X25519MLKEM768));
+[2026-01-06 16:12:41] [javac-output-2816] 				                                        ^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   variable X25519MLKEM768
+[2026-01-06 16:12:41] [javac-output-2816]   location: class NamedGroup
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/Tls13ClientExample.java:16: error: no suitable constructor found for TlsClientProtocol(InputStream,OutputStream,SecureRandom)
+[2026-01-06 16:12:41] [javac-output-2816]             TlsClientProtocol protocol = new TlsClientProtocol(new Socket(host, port).getInputStream(),
+[2026-01-06 16:12:41] [javac-output-2816]                                          ^
+[2026-01-06 16:12:41] [javac-output-2816]     constructor TlsClientProtocol.TlsClientProtocol() is not applicable
+[2026-01-06 16:12:41] [javac-output-2816]       (actual and formal argument lists differ in length)
+[2026-01-06 16:12:41] [javac-output-2816]     constructor TlsClientProtocol.TlsClientProtocol(InputStream,OutputStream) is not applicable
+[2026-01-06 16:12:41] [javac-output-2816]       (actual and formal argument lists differ in length)
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/Tls13ClientExample.java:46: error: MyTls13Client is not abstract and does not override abstract method getAuthentication() in TlsClient
+[2026-01-06 16:12:41] [javac-output-2816]     static class MyTls13Client extends DefaultTlsClient {
+[2026-01-06 16:12:41] [javac-output-2816]                  ^
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/Tls13ClientExample.java:57: error: incompatible types: ProtocolVersion cannot be converted to ProtocolVersion[]
+[2026-01-06 16:12:41] [javac-output-2816]             TlsExtensionsUtils.addSupportedVersionsExtensionClient(extensions, ProtocolVersion.TLSv13);
+[2026-01-06 16:12:41] [javac-output-2816]                                                                                               ^
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/Tls13ClientExample.java:73: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816]             String cipherSuiteName = CipherSuite.getName(cipherSuite);
+[2026-01-06 16:12:41] [javac-output-2816]                                                 ^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   method getName(int)
+[2026-01-06 16:12:41] [javac-output-2816]   location: class CipherSuite
+[2026-01-06 16:12:41] [javac-output-2816] /home/projjwalraj707/exp/javamlkem/Tls13ClientExample.java:76: error: cannot find symbol
+[2026-01-06 16:12:41] [javac-output-2816]             int namedGroup = params.getNamedGroup();
+[2026-01-06 16:12:41] [javac-output-2816]                                    ^
+[2026-01-06 16:12:41] [javac-output-2816]   symbol:   method getNamedGroup()
+[2026-01-06 16:12:41] [javac-output-2816]   location: variable params of type SecurityParameters

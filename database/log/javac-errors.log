@@ -1,14 +1,53 @@
-[2026-01-05 02:20:21] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
-[2026-01-05 02:20:21] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind ClassInstanceCreation
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unexpected symbol for constructor: new TlsClientProtocol(new Socket(host, port).getInputStream(), new Socket(host, port).getOutputStream(), crypto.getSecureRandom())
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown method invocation of kind MEMBER_SELECT: TlsExtensionsUtils.addSupportedVersionsExtensionClient(extensions, ProtocolVersion.TLSv13)
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown method invocation of kind MEMBER_SELECT: CipherSuite.getName(cipherSuite)
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] Unknown method invocation of kind MEMBER_SELECT: params.getNamedGroup()
-[2026-01-05 02:20:27] [javac-extractor-25462] [ERROR] 7 errors were reported by javac.
+[2026-01-06 16:12:35] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-06 16:12:35] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind ClassInstanceCreation
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unexpected symbol for constructor: new MLKEMKeyGenerationParameters(secureRandom, MLKEMParameters.ml_kem_768)
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind ClassInstanceCreation
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unexpected symbol for constructor: new MLKEMKeyPairGenerator()
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind VarAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown method invocation of kind MEMBER_SELECT: mlKemKeyPairGen.generateKeyPair()
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind CastExpression
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind CastExpression
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind ClassInstanceCreation
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unexpected symbol for constructor: new MLKEMGenerator(secureRandom)
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind VarAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown method invocation of kind MEMBER_SELECT: mlkemGenerator.generateEncapsulated(pubKey)
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind VarAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind ClassInstanceCreation
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind VarAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unexpected symbol for constructor: new MLKEMExtractor(prvKey)
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind VarAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown method invocation of kind MEMBER_SELECT: mlkemExtractor.extractSecret(cipherText)
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind VarAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown method invocation of kind MEMBER_SELECT: mlKemKeyPairGen.init(mlkemKeyGenParam)
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind VarAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind TypeAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind ClassInstanceCreation
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unexpected symbol for constructor: new TlsClientProtocol(new Socket(host, port).getInputStream(), new Socket(host, port).getOutputStream(), crypto.getSecureRandom())
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown method invocation of kind MEMBER_SELECT: TlsExtensionsUtils.addSupportedVersionsExtensionClient(extensions, ProtocolVersion.TLSv13)
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown method invocation of kind MEMBER_SELECT: CipherSuite.getName(cipherSuite)
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown or erroneous type for expression of kind MethodAccess
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] Unknown method invocation of kind MEMBER_SELECT: params.getNamedGroup()
+[2026-01-06 16:12:41] [javac-extractor-2816] [ERROR] 28 errors were reported by javac.

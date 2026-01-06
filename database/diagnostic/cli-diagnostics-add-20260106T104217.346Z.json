@@ -1,0 +1,1 @@
+{"timestamp":"2026-01-06T16:12:17.346201845+05:30","source":{"id":"cli/build-mode","name":"A build mode was specified"},"markdownMessage":"The none build mode was specified.","visibility":{"cliSummaryTable":false,"statusPage":false,"telemetry":true},"attributes":{"buildMode":"none"}}
